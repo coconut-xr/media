@@ -1,0 +1,9 @@
+{
+    "name": "Coconut Capital",
+    "short_name": "Coconut Capital",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Coconut Capital provides tailor-made IT-Solutions. With years of experience in E-Commerce, Cloud, Web and App Development Coconut Capital is tackling problems at any size and complexity.",
+    "theme_color": "#7BAF11"
+}

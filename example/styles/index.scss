@@ -1,0 +1,39 @@
+@import "./prism.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.flex-basis-0 {
+    flex-basis: 0;
+    min-width: 0;
+    min-height: 0;
+}
+
+.flex-row-responsive {
+    flex-direction: row;
+}
+
+.fullscreen {
+    width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+    .flex-row-responsive {
+        flex-direction: column;
+    }
+}

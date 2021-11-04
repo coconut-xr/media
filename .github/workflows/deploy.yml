@@ -1,0 +1,66 @@
+name: Depolyment
+
+on:
+    push:
+        branches: [master]
+
+jobs:
+    examples-page:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+
+        - name: Install and Build
+          run: |
+            npm install
+            npm run build
+
+        - name: Install and Build examples
+          working-directory: examples
+          run: |
+            npm i --legacy-peer-deps
+            npm run generate
+
+        - name: Deploy
+          uses: JamesIves/github-pages-deploy-action@4.1.5
+          with:
+            branch: gh-pages
+            folder: examples/out
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Setup Node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "12"
+
+            - name: Install Dependencies
+              run: npm install
+
+            - name: Check
+              run: npm run check
+
+            - name: Build
+              run: npm run build
+
+            - name: copy package.json
+              uses: canastro/copy-file-action@master
+              with:
+                  source: "package.json"
+                  target: "dist/package.json"
+
+            - name: copy README.md
+              uses: canastro/copy-file-action@master
+              with:
+                  source: "README.md"
+                  target: "dist/README.md"
+
+            - name: Deploy
+              uses: JS-DevTools/npm-publish@v1
+              with:
+                  token: ${{ secrets.NPM_TOKEN }}
+                  package: "./dist/package.json"

@@ -7,21 +7,12 @@ export enum CaptureDeviceType {
     AUDIO,
 }
 
-/**
- * export type ExtendedMediaDeviceInfo =
+export type ExtendedMediaDeviceInfo =
     | MediaDeviceInfo
     | {
           kind: "screencapture"
           deviceId: "default"
       }
- */
-
-export type ExtendedMediaDeviceInfo = {
-    readonly deviceId: string
-    readonly groupId?: string
-    readonly kind: MediaDeviceKind | "screencapture"
-    readonly label?: string
-}
 
 export function useSelectDefaultMediaDevice(
     kind: ExtendedMediaDeviceInfo["kind"],
@@ -61,24 +52,12 @@ export function requestMediaDeviceStream(info: ExtendedMediaDeviceInfo): Promise
     return Promise.reject(`unkown media device kind "${info.kind}"`)
 }
 
+const cacheKeys = ["cocoss-org/co-media/useMediaDevices"]
+
 export function useMediaDevices(): Array<ExtendedMediaDeviceInfo> {
-    /**
-     * const externalCaptureDevices =
-        "navigator" in globalThis
-            ? suspend(navigator.mediaDevices.enumerateDevices.bind(navigator.mediaDevices), [])
-            : []
-     */
     const externalCaptureDevices =
         "navigator" in globalThis
-            ? suspend(async () => {
-                  const devices = await navigator.mediaDevices.enumerateDevices()
-                  return devices.map<ExtendedMediaDeviceInfo>((device) => ({
-                      deviceId: device.deviceId,
-                      kind: device.kind,
-                      groupId: device.groupId,
-                      label: device.label,
-                  }))
-              }, [])
+            ? suspend(navigator.mediaDevices.enumerateDevices.bind(navigator.mediaDevices), cacheKeys)
             : []
 
     return useMemo<Array<ExtendedMediaDeviceInfo>>(() => {

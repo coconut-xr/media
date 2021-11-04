@@ -13,7 +13,9 @@ export default function Index() {
         <div className="d-flex flex-column fullscreen">
             <Head>
                 <title>co-media</title>
-                <meta name="description" content="react library for media usage"></meta>
+                <meta
+                    name="description"
+                    content="React library for accessing browser media like camera, microphone, screen capture, etc."></meta>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="icon" type="image/svg+xml" href={icon} />
                 <link rel="mask-icon" href={icon} color="#fff" />

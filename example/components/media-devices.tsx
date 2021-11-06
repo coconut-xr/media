@@ -116,7 +116,7 @@ export function Stream({ stream }: { stream: MediaStream }): JSX.Element {
         case StreamType.AUDIO:
             return <audio ref={ref} />
         case StreamType.VIDEO:
-            return <video className="flex-grow-1 flex-basis-0" ref={ref} />
+            return <video playsInline className="flex-grow-1 flex-basis-0" ref={ref} />
         default:
             ref.current = null
             return <Error />

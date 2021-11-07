@@ -52,7 +52,7 @@ export function requestMediaDeviceStream(info: ExtendedMediaDeviceInfo): Promise
     return Promise.reject(`unkown media device kind "${info.kind}"`)
 }
 
-const cacheKeys = ["cocoss-org/co-media/useMediaDevices"]
+const cacheKeys = [Symbol()]
 
 export function useMediaDevices(): Array<ExtendedMediaDeviceInfo> {
     const externalCaptureDevices =

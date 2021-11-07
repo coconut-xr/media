@@ -1,30 +1,47 @@
 {
-  "name": "co-media",
-  "version": "1.0.1",
-  "peerDependencies": {
-    "react": "^17.0.1"
-  },
-  "scripts": {
-    "build": "tsc",
-    "check": "run-s check:prettier check:eslint",
-    "check:prettier": "prettier --check src/**/*.{ts,tsx}",
-    "check:eslint": "eslint src",
-    "fix": "run-s fix:prettier fix:eslint",
-    "fix:prettier": "prettier --write src/**/*.{ts,tsx}",
-    "fix:eslint": "eslint src --fix"
-  },
-  "dependencies": {
-    "rxjs": "^7.4.0",
-    "suspend-react": "0.0.7"
-  },
-  "devDependencies": {
-    "react": "^17.0.1",
-    "@types/react": "^17.0.27",
-    "@typescript-eslint/eslint-plugin": "^4.16.1",
-    "@typescript-eslint/parser": "^4.16.1",
-    "eslint": "^7.21.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.3"
-  }
+    "name": "co-media",
+    "version": "1.0.2",
+    "main": "",
+    "description": "React library for accessing browser media like camera, microphone, screen capture, etc.",
+    "homepage": "https://cocoss-org.github.io/co-media",
+    "license": "SEE LICENSE IN LICENSE",
+    "author": "Bela Bohlender",
+    "keywords": [
+        "media",
+        "react",
+        "camera",
+        "screen-share",
+        "microphone",
+        "typescript"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:cocoss-org/co-media.git"
+    },
+    "peerDependencies": {
+        "react": "^17.0.1"
+    },
+    "scripts": {
+        "build": "tsc",
+        "check": "run-s check:prettier check:eslint",
+        "check:prettier": "prettier --check src/**/*.{ts,tsx}",
+        "check:eslint": "eslint src",
+        "fix": "run-s fix:prettier fix:eslint",
+        "fix:prettier": "prettier --write src/**/*.{ts,tsx}",
+        "fix:eslint": "eslint src --fix"
+    },
+    "dependencies": {
+        "rxjs": "^7.4.0",
+        "suspend-react": "0.0.7"
+    },
+    "devDependencies": {
+        "react": "^17.0.1",
+        "@types/react": "^17.0.27",
+        "@typescript-eslint/eslint-plugin": "^4.16.1",
+        "@typescript-eslint/parser": "^4.16.1",
+        "eslint": "^7.21.0",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^2.2.1",
+        "typescript": "^4.2.3"
+    }
 }

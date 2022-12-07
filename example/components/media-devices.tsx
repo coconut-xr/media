@@ -41,6 +41,8 @@ export function MediaDevices(): JSX.Element {
     )
 }
 
+MediaDevices.ssr = false
+
 export function MediaDevicesControl({
     audioInput,
     screenCapture,

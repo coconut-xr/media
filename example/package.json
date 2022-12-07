@@ -8,20 +8,23 @@
     "generate": "next build && next export"
   },
   "dependencies": {
-    "@mapbox/rehype-prism": "^0.7.0",
+    "@mapbox/rehype-prism": "^0.8.0",
     "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "@mdx-js/loader": "^1.6.22",
-    "@next/mdx": "^11.1.2",
-    "@react-three/fiber": "^7.0.6",
-    "bootstrap": "^5.1.0",
-    "co-media": "file:../dist",
-    "next": "^11.1.2",
-    "next-images": "^1.8.1",
+    "@material-ui/icons": "^4.11.3",
+    "@mdx-js/loader": "^2.1.5",
+    "@next/mdx": "^13.0.6",
+    "@react-three/fiber": "^8.9.1",
+    "bootstrap": "^5.2.3",
+    "co-media": "file:..",
+    "next": "^13.0.6",
+    "next-images": "^1.8.4",
     "next-purgecss": "^4.0.0",
-    "prismjs": "^1.24.1",
-    "react-dom": "^17.0.2",
+    "prismjs": "^1.29.0",
+    "react-dom": "^18.2.0",
     "react-loading": "^2.0.3",
-    "sass": "^1.37.5"
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.11"
   }
 }

@@ -1,4 +1,3 @@
 /node_modules/
-/dist/*
-!/dist/.npmrc
+/dist/
 /package-lock.json

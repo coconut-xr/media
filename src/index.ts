@@ -1,2 +1,2 @@
-export * from "./use-media-devices"
-export * from "./use-stream"
+export * from "./use-media-devices.js";
+export * from "./use-stream.js";

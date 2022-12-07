@@ -5,8 +5,10 @@
         "esModuleInterop": true,
         "jsx": "react",
         "strict": true,
-        "target": "ES5",
-        "lib": ["DOM", "ES2018"],
+        "target": "ESNext",
+        "lib": ["DOM", "ESNext"],
+        "module": "ESNext",
+        "moduleResolution": "NodeNext",
         "outDir": "dist",
         "experimentalDecorators": true
     },

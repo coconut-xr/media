@@ -1,10 +1,10 @@
 {
-  "name": "co-media",
+  "name": "@coconut-xr/media",
   "version": "1.1.0",
   "type": "module",
   "main": "dist/index.js",
   "description": "React library for accessing browser media like camera, microphone, screen capture, etc.",
-  "homepage": "https://cocoss-org.github.io/co-media",
+  "homepage": "https://coconut-xr.github.io/media",
   "license": "SEE LICENSE IN LICENSE",
   "author": "Bela Bohlender",
   "keywords": [
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:cocoss-org/co-media.git"
+    "url": "git@github.com:coconut-xr/media.git"
   },
   "peerDependencies": {
     "react": "*"

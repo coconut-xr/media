@@ -16,8 +16,8 @@ module.exports = withImages(
             images: {
                 loader: "custom",
             },
-            basePath: "/co-media",
-            assetPrefix: "/co-media",
+            basePath: "/media",
+            assetPrefix: "/media",
             eslint: {
                 ignoreDuringBuilds: true,
             },

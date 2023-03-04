@@ -4,7 +4,7 @@ import {
     useMediaDevices,
     useSelectDefaultMediaDevice,
     useStreamType,
-} from "co-media"
+} from "@coconut-xr/media"
 import { Error, Mic, MicOff, ScreenShare, StopScreenShare, Videocam, VideocamOff } from "@material-ui/icons"
 import React, { useLayoutEffect, useRef, useState } from "react"
 import { MediaDeviceButton } from "./media-device-button"

@@ -8,7 +8,7 @@ export function Footer() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/cocoss-org/co-media"
+            href="https://github.com/coconut-xr/media"
             className="mx-2 text-black d-flex flex-row align-items-center"
           >
             <svg

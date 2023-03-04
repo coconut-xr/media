@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <div className="d-flex flex-column fullscreen">
       <Head>
-        <title>co-media</title>
+        <title>@coconut-xr/media</title>
         <meta
           name="description"
           content="React library for accessing browser media like camera, microphone, screen capture, etc."

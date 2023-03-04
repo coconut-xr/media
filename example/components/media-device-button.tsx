@@ -1,6 +1,6 @@
 import { SvgIconProps } from "@material-ui/core"
 import { SvgIconComponent } from "@material-ui/icons"
-import { closeStream, ExtendedMediaDeviceInfo, requestMediaDeviceStream } from "co-media"
+import { closeStream, ExtendedMediaDeviceInfo, requestMediaDeviceStream } from "@coconut-xr/media"
 import React, { Suspense, useLayoutEffect, useState } from "react"
 import { clear, suspend } from "suspend-react"
 import ReactLoading from "react-loading"

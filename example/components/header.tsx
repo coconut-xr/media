@@ -5,7 +5,7 @@ export function Header() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <a href="/" className="navbar-brand">
-          co-media example
+          @coconut-xr/media example
         </a>
       </div>
     </nav>

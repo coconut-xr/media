@@ -1,6 +1,6 @@
 {
   "name": "@coconut-xr/media",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "main": "dist/index.js",
   "description": "React library for accessing browser media like camera, microphone, screen capture, etc.",
@@ -33,7 +33,7 @@
     "fix:eslint": "eslint src --fix"
   },
   "dependencies": {
-    "suspend-react": "0.0.8"
+    "suspend-react": "^0.0.9"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.45.1",

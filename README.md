@@ -1,7 +1,7 @@
 # @coconut-xr/media
 
-[![Build Status](https://img.shields.io/github/workflow/status/coconut-xr/media/Depolyment)](https://github.com/coconut-xr/media/actions)&nbsp;
-[![Npm package version](https://badgen.net/npm/v/media)](https://npmjs.com/package/@coconut-xr/media)&nbsp;
+[![Build Status](https://img.shields.io/github/actions/workflow/status/coconut-xr/media/.github/workflows/deploy.yml)](https://github.com/coconut-xr/media/actions)&nbsp;
+[![Npm package version](https://badgen.net/npm/v/@coconut-xr/media)](https://npmjs.com/package/@coconut-xr/media)&nbsp;
 [![GitHub license](https://img.shields.io/github/license/coconut-xr/media.svg)](https://github.com/coconut-xr/media/blob/master/LICENSE)&nbsp;
 [![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com/BelaBohlender)
 
